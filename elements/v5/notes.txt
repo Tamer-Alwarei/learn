@@ -1,0 +1,14 @@
+// Background-color: for all the page
+// language section
+// add extra elements 
+// move elements up and down
+// uplead font, and many fonts
+// choose font family
+// show hide elements
+// defernt css for each page ( before queue after )
+// put indecate for which element got changed css
+// progressbar and build element inside element
+// highlight element
+
+
+https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction

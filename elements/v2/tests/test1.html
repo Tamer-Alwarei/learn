@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div id="container"></div>
+    <script>
+        class Compo{
+            count = 0;
+            constructor(){
+                this.domElement = document.createElement('div');
+                this.buildElement()
+                this.style();
+                this.name = "Tamer";
+                // this.domElement.addEventListener('mouseover', this.handlerMouseOver.bind(this));
+                this.domElement.addEventListener('click', this.handler);
+                // this.domElement.addEventListener('mouseover', e => this.handlerMouseOver(e) );
+            }
+            handlerMouseOver(e){
+                console.log('handlerMouseOver')
+                console.log(e.target);
+                console.log(this)
+            }
+            handler = e => {
+                console.log('handler');
+                console.log(e.target);
+                const tem = `<div class="col"><h2>This is a title: ${this.count}</h2></div>`
+                const ch_ = document.createElement('div');
+                ch_.classList.add('row')
+                ch_.innerHTML = tem
+                e.target.appendChild(ch_)
+                console.log(this)
+                this.hello();
+                this.count += 1;
+                console.log(`clicked ${this.count} times`);
+            }
+            buildElement(){
+                const _con = document.getElementById('container')
+                _con.appendChild(this.domElement)
+            }
+            hello(){
+                console.log(`clicked ${this.count} times`);
+                this.count += 1;
+                console.log(`clicked ${this.count} times`);
+                console.log('hello')
+            }
+            style(){
+                this.domElement.style.border = "2px solid #0000FF";
+                this.domElement.style.minHeight = "299px";
+            }
+        }
+
+        const com1 = new Compo();
+
+        
+    </script>
+</body>
+</html>

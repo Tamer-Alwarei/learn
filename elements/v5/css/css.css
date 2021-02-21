@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+body{
+    background-color: #f7f9fa;
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+#controles{
+    border-left: 1px solid #dddfe1;
+    min-height: 100vh;
+    min-width: 400px;
+    float: right;
+}
+#controles-extra-options{
+    width: 56px;
+    height: 100vh;
+}
+#controles-inner{
+    width: calc(100% - 56px);
+}
+#content-container{
+    
+}
+
+.btn-check:focus+.btn, .btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0rem rgba(13,110,253,.25);
+}
+
+input{
+    margin-bottom: 5px;
+}
+
+*:not(html){
+    /* border: 1px solid rgba(255, 255, 255, 0); */
+    box-sizing: border-box;
+}
+*:hover:not(html){
+    /* border: 1px solid rgb(235, 202, 255) !important; */
+    box-sizing: border-box;
+}

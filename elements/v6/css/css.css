@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@200;400;600;800&family=Limelight&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&display=swap');
+body{
+    background-color: #f7f9fa;
+    /* font-family: 'Open Sans', sans-serif !important; */
+    font-family: 'Khula', sans-serif;
+    /* font-family: 'Catamaran', sans-serif; */
+    /* font-family: 'Limelight', cursive; */
+}
+#top-controles{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+#components{
+    position: fixed;
+    top: 55px;
+    left: 0;
+    height: calc(100vh - 55px);
+    min-width: 350px;
+    overflow: hidden;
+}
+#components-extra-options{
+    width: 56px;
+    height: 100%;
+}
+#components-inner{
+    width: calc(349px - 56px);
+    height: 100%;
+    overflow-y: auto;
+}
+
+#controles{
+    position: fixed;
+    top: 55px;
+    right: 0;
+    height: calc(100vh - 55px);
+    min-width: 350px;
+}
+#controles-extra-options{
+    width: 56px;
+    height: 100%;
+    
+}
+#controles-inner{
+    width: calc(100% - 56px);
+    height: 100%;
+    overflow-y: auto;
+}
+
+
+#content-container{
+    width: calc(100% - 700px);
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.btn-check:focus+.btn, .btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0rem rgba(13,110,253,.25);
+}
+
+input{
+    margin-bottom: 5px;
+}
+
+*:not(html){
+    /* border: 1px solid rgba(255, 255, 255, 0); */
+    box-sizing: border-box;
+}
+*:hover:not(html){
+    /* border: 1px solid rgb(235, 202, 255) !important; */
+    box-sizing: border-box;
+}
+.vt{
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    display: block;
+}
